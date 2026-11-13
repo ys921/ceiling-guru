@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Ceiling Guru | PVC, Soffit &amp; WPC Ceiling · Penang, Kulim, Kedah</title>
-<meta name="description" content="Ceiling Guru 天花板：PVC、Soffit、WPC 天花，包料包工包骨架。服务 Penang、Kulim、Kedah。PVC ceiling from RM13 / sq ft, fully installed.">
+<title>Ceiling Guru | PVC, Soffit, WPC &amp; Fluted Panel · Penang, Kulim, Kedah</title>
+<meta name="description" content="Ceiling Guru：PVC、Soffit、WPC 和 Fluted Panel，天花和墙面，包料包工包骨架。服务 Penang、Kulim、Kedah。PVC ceiling from RM13 / sq ft, fully installed.">
 <meta name="theme-color" content="#22201C">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Ceiling Guru">
-<meta property="og:description" content="PVC、Soffit、WPC 天花，包料包工包骨架。Penang · Kulim · Kedah">
+<meta property="og:description" content="PVC、Soffit、WPC 和 Fluted Panel，包料包工包骨架。Penang · Kulim · Kedah">
 <meta property="og:image" content="img/sof-golden-oak.jpg">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <style>
@@ -19,7 +19,7 @@ img{max-width:100%}
 [hidden]{display:none!important}
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-.top{scroll-margin-top:0} section[id]{scroll-margin-top:72px}
+section[id]{scroll-margin-top:72px}
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -165,7 +165,7 @@ section.block{padding-block:80px}
 .show-intro{display:flex;flex-direction:column;gap:10px;max-width:560px;min-width:0}
 .show-intro h2{font-size:clamp(28px,3.6vw,42px)}
 .show-intro p{color:var(--on-deep-muted);font-size:16px}
-.show-tabs{display:flex;gap:6px;padding:4px;border:1px solid var(--deep-line);border-radius:999px}
+.show-tabs{display:flex;flex-wrap:wrap;gap:6px;padding:4px;border:1px solid var(--deep-line);border-radius:999px}
 .tab{font:inherit;font-weight:600;font-size:15px;min-height:44px;padding:0 20px;border:0;border-radius:999px;background:transparent;color:var(--on-deep-muted);cursor:pointer}
 .tab[aria-pressed="true"]{background:var(--on-deep);color:var(--deep)}
 .stage{position:relative;height:600px;margin-top:68px;touch-action:pan-y;outline:none;
@@ -227,7 +227,7 @@ section.block{padding-block:80px}
 .est-in > p{color:var(--muted)}
 .field{display:flex;flex-direction:column;gap:8px}
 .field label,.field .lbl{font-weight:600;font-size:14px}
-.seg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.seg{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
 .seg input{position:absolute;opacity:0;pointer-events:none}
 .seg label{display:flex;align-items:center;justify-content:center;text-align:center;min-height:48px;padding:6px 10px;border:1.5px solid var(--line);border-radius:12px;cursor:pointer;font-weight:600;font-size:15px;background:var(--bg)}
 .seg input:checked + label{border-color:var(--ink);background:var(--ink);color:var(--bg)}
@@ -247,7 +247,7 @@ section.block{padding-block:80px}
 .est-out .btn{align-self:flex-start;margin-top:auto}
 .btn[aria-disabled="true"]{opacity:.55;cursor:not-allowed}
 @media (max-width:860px){.est{grid-template-columns:minmax(0,1fr)}.est-in,.est-out{padding:24px}}
-@media (max-width:420px){.seg{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:560px){.seg{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
 /* process */
 .steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px;counter-reset:s}
@@ -330,7 +330,7 @@ section.block{padding-block:80px}
       <div>
         <div class="eyebrow">Penang · Kulim · Kedah</div>
         <h1 id="hero-title">木纹天花，<em>包料包工包骨架</em></h1>
-        <p class="lede" data-i18n="hero_sub">PVC、Soffit 和 WPC 天花。价格已包材料、骨架和安装，每 200 sq ft 大约一天完工。</p>
+        <p class="lede" data-i18n="hero_sub">PVC、Soffit、WPC 和 Fluted Panel，天花和墙面都能做。价格已包材料、骨架和安装，每 200 sq ft 大约一天完工。</p>
         <div class="ctas">
           <a class="btn btn-wa" data-wa href="#contact"><svg width="20" height="20" aria-hidden="true"><use href="#i-wa"></use></svg><span data-i18n="cta_wa">WhatsApp 询价</span></a>
           <a class="btn btn-ghost" href="#estimate" data-i18n="cta_estimate">计算价格</a>
@@ -369,13 +369,14 @@ section.block{padding-block:80px}
   <section class="show" id="products" aria-labelledby="show-title">
     <div class="wrap show-head">
       <div class="show-intro">
-        <h2 id="show-title" data-i18n="prod_title">三种天花，按面积计价</h2>
+        <h2 id="show-title" data-i18n="prod_title">四种板材，按面积计价</h2>
         <p data-i18n="prod_sub">价格已包安装和骨架。超过 200 sq ft，整单都用较低的单价。</p>
       </div>
       <div class="show-tabs" role="group" aria-label="Ceiling type">
         <button type="button" class="tab" data-prod="pvc" aria-pressed="true">PVC</button>
         <button type="button" class="tab" data-prod="soffit" aria-pressed="false">Soffit</button>
         <button type="button" class="tab" data-prod="wpc" aria-pressed="false">WPC</button>
+        <button type="button" class="tab" data-prod="fluted" aria-pressed="false">Fluted Panel</button>
       </div>
     </div>
 
@@ -436,13 +437,14 @@ section.block{padding-block:80px}
       <div class="est">
         <form class="est-in" id="est-form" novalidate>
           <h2 data-i18n="est_title">估算你的价钱</h2>
-          <p data-i18n="est_sub">选天花种类，输入面积，马上看到大概价钱、定金和工期。</p>
+          <p data-i18n="est_sub">选板材种类，输入面积，马上看到大概价钱、定金和工期。</p>
           <div class="field">
-            <span class="lbl" id="type-lbl" data-i18n="est_type">天花种类</span>
+            <span class="lbl" id="type-lbl" data-i18n="est_type">板材种类</span>
             <div class="seg" role="radiogroup" aria-labelledby="type-lbl">
               <input type="radio" name="ptype" id="pt-pvc" value="pvc" checked><label for="pt-pvc">PVC</label>
               <input type="radio" name="ptype" id="pt-soffit" value="soffit"><label for="pt-soffit">Soffit</label>
               <input type="radio" name="ptype" id="pt-wpc" value="wpc"><label for="pt-wpc">WPC</label>
+              <input type="radio" name="ptype" id="pt-fluted" value="fluted"><label for="pt-fluted">Fluted Panel</label>
             </div>
           </div>
           <div class="field">
@@ -489,7 +491,7 @@ section.block{padding-block:80px}
         <ul class="notes">
           <li><svg width="20" height="20" aria-hidden="true"><use href="#i-alert"></use></svg><span data-i18n="n1">铁皮屋顶下面要先加隔热层。我们可以代装，费用另计。</span></li>
           <li><svg width="20" height="20" aria-hidden="true"><use href="#i-alert"></use></svg><span data-i18n="n2">原有的天花要先拆除，拆除费用另计。</span></li>
-          <li><svg width="20" height="20" aria-hidden="true"><use href="#i-alert"></use></svg><span data-i18n="n3">透明采光板或玻璃屋顶下方不适合装 Soffit，太热会变形。</span></li>
+          <li><svg width="20" height="20" aria-hidden="true"><use href="#i-alert"></use></svg><span data-i18n="n3">透明采光板或玻璃屋顶下方，PVC 和 Soffit 都会受热变形，不适合安装。</span></li>
         </ul>
       </div>
       <div class="panel">
@@ -530,31 +532,33 @@ section.block{padding-block:80px}
 // Put the WhatsApp number here, digits only with country code, e.g. "60123456789".
 const WA_NUMBER = "";
 
-const PRICES = { pvc:[15,13], soffit:[17,15], wpc:[28,25] };
-const TYPE_NAME = { pvc:"PVC", soffit:"Soffit", wpc:"WPC" };
+const PRICES = { pvc:[15,13], soffit:[17,15], wpc:[30,28], fluted:[20,18] };
+const TYPE_NAME = { pvc:"PVC", soffit:"Soffit", wpc:"WPC", fluted:"Fluted Panel" };
 
 const I18N = {
   zh:{
     nav_products:"产品", nav_estimate:"价格计算", nav_process:"流程", nav_contact:"联系",
     hero_t1:"木纹天花，", hero_t2:"包料包工包骨架",
-    hero_sub:"PVC、Soffit 和 WPC 天花。价格已包材料、骨架和安装，每 200 sq ft 大约一天完工。",
+    hero_sub:"PVC、Soffit、WPC 和 Fluted Panel，天花和墙面都能做。价格已包材料、骨架和安装，每 200 sq ft 大约一天完工。",
     cta_wa:"WhatsApp 询价", cta_estimate:"计算价格",
     f1:"最低承接面积", f2_v:"1 天", f2:"每 200 sq ft 的工期", f3:"定金，余款完工后付清",
-    prod_title:"三种天花，按面积计价", prod_sub:"价格已包安装和骨架。超过 200 sq ft，整单都用较低的单价。",
+    prod_title:"四种板材，按面积计价", prod_sub:"价格已包安装和骨架。超过 200 sq ft，整单都用较低的单价。",
     tier2:"201 sq ft 起（全单）", spec:"规格", incl:"已包括", use:"适用",
     pvc_name:"PVC 空心天花板", pvc_desc:"最经济的选择。轻、防水、不怕白蚁，适合客厅、睡房和厨房。",
     pvc_spec:"宽 1 尺 × 长 9.5 / 19.4 尺 · 厚 9mm", pvc_incl:"L Profile、螺丝、Clip 及铝骨架",
     sof_name:"Soffit 卡扣天花", sof_desc:"室内室外都能用，屋檐、Car Porch、阳台都适合。卡扣式安装，接缝不明显，环保无甲醛。",
     sof_spec:"宽 34.5cm × 长 2.9m / 5.8m", sof_use:"客厅、睡房、浴室、走廊、Car Porch、阳台、屋檐",
-    wpc_name:"WPC 木塑线条天花", wpc_desc:"木粉加塑料压制，立体线条，质感最接近真木。防水防白蚁，室外也能装。",
-    wpc_spec:"宽 219mm × 长 2.9m · 厚 26mm", wpc_use:"室内外天花、Patio、Car Porch",
+    wpc_name:"WPC 户外木塑板", wpc_desc:"木粉加塑料压制，厚实耐晒，立体线条最接近真木。防水防白蚁，专做户外。",
+    wpc_spec:"宽 219mm × 长 2.9m · 厚 26mm", wpc_use:"室外墙、室外天花",
+    fp_name:"Fluted Panel 室内线条板", fp_desc:"凹凸线条的装饰板，做天花或电视墙、背景墙都好看。8 款颜色，包括木纹、纯色和黑金大理石纹。",
+    fp_spec:"宽 160mm · 厚 23mm · 长度待定", fp_use:"天花、室内墙",
     c4:"4 款颜色，点一下看质感", c5:"5 款颜色，点一下看质感", c6:"6 款颜色，点一下看质感", ref_img:"效果参考图",
     gal_title:"Soffit 装好后的样子", gal_note:"以下是供应商提供的效果参考图，不是我们的完工案例。我们的完工照片会陆续更新。",
     g1:"客厅", g2:"睡房", g3:"阳光房", g4:"户外屋檐",
     nav_3d:"3D 看效果", show_hint:"拖动、点箭头或点颜色切换", prev:"上一款", next:"下一款", v3d_title:"3D 看效果", v3d_fail:"你的浏览器无法显示 3D，可以看上面的产品照片。", v3d_sub:"选天花种类和颜色，看板材的形状和纹理。移动鼠标，板会跟着微微转动。",
     v3d_drag:"移动鼠标或手指，板会跟着转", v3d_note:"画面只是示意，实际颜色和木纹以样板为准。", v3d_calc:"用这个算价钱",
-    est_title:"估算你的价钱", est_sub:"选天花种类，输入面积，马上看到大概价钱、定金和工期。",
-    est_type:"天花种类", est_area:"面积", est_total:"总价（估算）",
+    est_title:"估算你的价钱", est_sub:"选板材种类，输入面积，马上看到大概价钱、定金和工期。",
+    est_type:"板材种类", est_area:"面积", est_total:"总价（估算）",
     est_deposit:"50% 定金", est_balance:"完工后付余款", est_days:"工期",
     est_note:"以上为估算，正式报价以上门量尺寸为准。不含隔热层和拆旧天花。",
     est_send:"把这个估算发到 WhatsApp",
@@ -570,7 +574,7 @@ const I18N = {
     note_title:"施工前须知",
     n1:"铁皮屋顶下面要先加隔热层。我们可以代装，费用另计。",
     n2:"原有的天花要先拆除，拆除费用另计。",
-    n3:"透明采光板或玻璃屋顶下方不适合装 Soffit，太热会变形。",
+    n3:"透明采光板或玻璃屋顶下方，PVC 和 Soffit 都会受热变形，不适合安装。",
     area_title:"服务地区",
     area_text:"我们在 Bukit Mertajam 的办公室正在装修，预计明年开业。现在可以 WhatsApp 预约上门量尺寸。",
     agent_title:"招聘销售代理", agent_text:"介绍客户就有佣金，按成交面积计算。有兴趣请 WhatsApp 我们了解详情。", agent_cta:"了解代理计划",
@@ -584,24 +588,26 @@ const I18N = {
   en:{
     nav_products:"Products", nav_estimate:"Price estimate", nav_process:"How it works", nav_contact:"Contact",
     hero_t1:"Wood-look ceilings, ", hero_t2:"fully installed",
-    hero_sub:"PVC, soffit and WPC ceilings. Prices include materials, framing and installation, and every 200 sq ft takes about a day.",
+    hero_sub:"PVC, soffit, WPC and fluted panels for ceilings and walls. Prices include materials, framing and installation, and every 200 sq ft takes about a day.",
     cta_wa:"WhatsApp for a quote", cta_estimate:"Estimate your price",
     f1:"minimum job size", f2_v:"1 day", f2:"to install every 200 sq ft", f3:"deposit, balance on completion",
-    prod_title:"Three ceilings, priced by area", prod_sub:"Prices include installation and framing. Above 200 sq ft, the whole job gets the lower rate.",
+    prod_title:"Four panel types, priced by area", prod_sub:"Prices include installation and framing. Above 200 sq ft, the whole job gets the lower rate.",
     tier2:"201 sq ft and up (whole job)", spec:"Size", incl:"Includes", use:"For",
     pvc_name:"PVC hollow ceiling panel", pvc_desc:"The most economical choice. Light, waterproof and termite-proof, for living rooms, bedrooms and kitchens.",
     pvc_spec:"1 ft wide × 9.5 / 19.4 ft long · 9 mm thick", pvc_incl:"L profile, screws, clips and aluminium framing",
     sof_name:"Soffit panel", sof_desc:"For indoors and outdoors: roof eaves, car porches and balconies. Interlocking panels with near-invisible joints, formaldehyde-free.",
     sof_spec:"34.5 cm wide × 2.9 m / 5.8 m long", sof_use:"Living rooms, bedrooms, bathrooms, corridors, car porches, balconies, eaves",
-    wpc_name:"WPC fluted ceiling", wpc_desc:"Wood fibre and plastic composite with deep flutes, the closest look to real timber. Waterproof, termite-proof and fine outdoors.",
-    wpc_spec:"219 mm wide × 2.9 m long · 26 mm thick", wpc_use:"Indoor and outdoor ceilings, patios, car porches",
+    wpc_name:"WPC outdoor panel", wpc_desc:"Thick wood-fibre and plastic composite with deep flutes, the closest look to real timber. Waterproof, termite-proof and made for outdoors.",
+    wpc_spec:"219 mm wide × 2.9 m long · 26 mm thick", wpc_use:"Outdoor walls and outdoor ceilings",
+    fp_name:"Fluted panel (indoor)", fp_desc:"A decorative panel with raised flutes for ceilings, TV walls and feature walls. 8 colours, including wood grain, solid colours and black-and-gold marble.",
+    fp_spec:"160 mm wide · 23 mm thick · length to be confirmed", fp_use:"Ceilings and indoor walls",
     c4:"4 colours, tap one to see the texture", c5:"5 colours, tap one to see the texture", c6:"6 colours, tap one to see the texture", ref_img:"Reference image",
     gal_title:"What soffit looks like installed", gal_note:"These are reference images from our supplier, not our own finished jobs. Photos of our completed work are coming soon.",
     g1:"Living room", g2:"Bedroom", g3:"Sunroom", g4:"Outdoor eaves",
     nav_3d:"3D view", show_hint:"Drag, use the arrows or tap a colour to switch", prev:"Previous colour", next:"Next colour", v3d_title:"See it in 3D", v3d_fail:"Your browser can't show the 3D view. The product photos above show every colour.", v3d_sub:"Pick a ceiling type and colour to see the panel shape and finish. Move your mouse and the panel tilts with it.",
     v3d_drag:"Move your mouse or finger to tilt the panel", v3d_note:"This is a guide. Check real samples for exact colours and grain.", v3d_calc:"Price this ceiling",
-    est_title:"Estimate your price", est_sub:"Pick a ceiling type and enter your area to see the rough price, deposit and installation time.",
-    est_type:"Ceiling type", est_area:"Area", est_total:"Estimated total",
+    est_title:"Estimate your price", est_sub:"Pick a panel type and enter your area to see the rough price, deposit and installation time.",
+    est_type:"Panel type", est_area:"Area", est_total:"Estimated total",
     est_deposit:"50% deposit", est_balance:"Balance on completion", est_days:"Installation time",
     est_note:"This is an estimate. The final quote follows our on-site measurement and excludes insulation and removal of an old ceiling.",
     est_send:"Send this estimate on WhatsApp",
@@ -617,7 +623,7 @@ const I18N = {
     note_title:"Before we install",
     n1:"Metal roofs need an insulation layer first. We can install it at extra cost.",
     n2:"Any existing ceiling has to be removed first, at extra cost.",
-    n3:"Soffit panels can't go under clear polycarbonate or glass roofs, where the heat can warp them.",
+    n3:"PVC and soffit panels can't go under clear polycarbonate or glass roofs, where the heat warps them.",
     area_title:"Where we work",
     area_text:"Our Bukit Mertajam office is being renovated and opens next year. Until then, book a site visit on WhatsApp.",
     agent_title:"We're hiring sales agents", agent_text:"Earn commission on every job you refer, based on the installed area. WhatsApp us for details.", agent_cta:"About the agent plan",
@@ -631,24 +637,26 @@ const I18N = {
   ms:{
     nav_products:"Produk", nav_estimate:"Anggaran harga", nav_process:"Proses", nav_contact:"Hubungi",
     hero_t1:"Siling corak kayu, ", hero_t2:"siap dipasang",
-    hero_sub:"Siling PVC, soffit dan WPC. Harga termasuk bahan, rangka dan pemasangan, dan setiap 200 sq ft siap dalam kira-kira sehari.",
+    hero_sub:"PVC, soffit, WPC dan panel beralur untuk siling dan dinding. Harga termasuk bahan, rangka dan pemasangan, dan setiap 200 sq ft siap dalam kira-kira sehari.",
     cta_wa:"WhatsApp untuk sebut harga", cta_estimate:"Kira anggaran harga",
     f1:"saiz kerja minimum", f2_v:"1 hari", f2:"bagi setiap 200 sq ft", f3:"deposit, baki selepas siap",
-    prod_title:"Tiga jenis siling, harga ikut keluasan", prod_sub:"Harga termasuk pemasangan dan rangka. Melebihi 200 sq ft, seluruh kerja dikira dengan kadar lebih rendah.",
+    prod_title:"Empat jenis panel, harga ikut keluasan", prod_sub:"Harga termasuk pemasangan dan rangka. Melebihi 200 sq ft, seluruh kerja dikira dengan kadar lebih rendah.",
     tier2:"201 sq ft ke atas (seluruh kerja)", spec:"Saiz", incl:"Termasuk", use:"Sesuai",
     pvc_name:"Panel siling PVC berongga", pvc_desc:"Pilihan paling jimat. Ringan, kalis air dan kalis anai-anai, sesuai untuk ruang tamu, bilik tidur dan dapur.",
     pvc_spec:"Lebar 1 kaki × panjang 9.5 / 19.4 kaki · tebal 9 mm", pvc_incl:"L profile, skru, klip dan rangka aluminium",
     sof_name:"Panel soffit", sof_desc:"Sesuai untuk dalam dan luar rumah: cucur atap, porch kereta dan balkoni. Panel bercantum dengan sambungan hampir tidak kelihatan, bebas formaldehid.",
     sof_spec:"Lebar 34.5 cm × panjang 2.9 m / 5.8 m", sof_use:"Ruang tamu, bilik tidur, bilik air, koridor, porch kereta, balkoni, cucur atap",
-    wpc_name:"Siling WPC beralur", wpc_desc:"Komposit serbuk kayu dan plastik dengan alur dalam, paling hampir dengan rupa kayu sebenar. Kalis air, kalis anai-anai dan sesuai di luar.",
-    wpc_spec:"Lebar 219 mm × panjang 2.9 m · tebal 26 mm", wpc_use:"Siling dalam dan luar, patio, porch kereta",
+    wpc_name:"Panel WPC luar", wpc_desc:"Komposit serbuk kayu dan plastik yang tebal dengan alur dalam, paling hampir dengan rupa kayu sebenar. Kalis air, kalis anai-anai dan khas untuk luar rumah.",
+    wpc_spec:"Lebar 219 mm × panjang 2.9 m · tebal 26 mm", wpc_use:"Dinding luar dan siling luar",
+    fp_name:"Panel beralur (dalaman)", fp_desc:"Panel hiasan beralur untuk siling, dinding TV dan dinding ciri. 8 warna, termasuk corak kayu, warna padu dan marmar hitam emas.",
+    fp_spec:"Lebar 160 mm · tebal 23 mm · panjang belum disahkan", fp_use:"Siling dan dinding dalaman",
     c4:"4 warna, tekan untuk lihat tekstur", c5:"5 warna, tekan untuk lihat tekstur", c6:"6 warna, tekan untuk lihat tekstur", ref_img:"Gambar rujukan",
     gal_title:"Rupa soffit selepas dipasang", gal_note:"Ini gambar rujukan daripada pembekal kami, bukan kerja siap kami sendiri. Gambar kerja kami akan dikemas kini tidak lama lagi.",
     g1:"Ruang tamu", g2:"Bilik tidur", g3:"Bilik suria", g4:"Cucur atap luar",
     nav_3d:"Paparan 3D", show_hint:"Seret, guna anak panah atau tekan warna untuk tukar", prev:"Warna sebelumnya", next:"Warna seterusnya", v3d_title:"Lihat dalam 3D", v3d_fail:"Pelayar anda tidak dapat memaparkan 3D. Gambar produk di atas menunjukkan setiap warna.", v3d_sub:"Pilih jenis siling dan warna untuk melihat bentuk dan kemasan panel. Gerakkan tetikus dan panel akan condong mengikutnya.",
     v3d_drag:"Gerakkan tetikus atau jari untuk condongkan panel", v3d_note:"Ini sebagai panduan. Rujuk sampel sebenar untuk warna dan corak kayu yang tepat.", v3d_calc:"Kira harga siling ini",
-    est_title:"Anggaran harga anda", est_sub:"Pilih jenis siling dan masukkan keluasan untuk melihat anggaran harga, deposit dan tempoh pemasangan.",
-    est_type:"Jenis siling", est_area:"Keluasan", est_total:"Anggaran jumlah",
+    est_title:"Anggaran harga anda", est_sub:"Pilih jenis panel dan masukkan keluasan untuk melihat anggaran harga, deposit dan tempoh pemasangan.",
+    est_type:"Jenis panel", est_area:"Keluasan", est_total:"Anggaran jumlah",
     est_deposit:"Deposit 50%", est_balance:"Baki selepas siap", est_days:"Tempoh pemasangan",
     est_note:"Ini anggaran sahaja. Sebut harga muktamad ikut ukuran di tapak dan tidak termasuk penebat haba serta kerja membuka siling lama.",
     est_send:"Hantar anggaran ini melalui WhatsApp",
@@ -664,7 +672,7 @@ const I18N = {
     note_title:"Sebelum pemasangan",
     n1:"Bumbung zink atau logam perlu lapisan penebat haba dahulu. Kami boleh pasang dengan caj tambahan.",
     n2:"Siling sedia ada perlu dibuka dahulu, dengan caj tambahan.",
-    n3:"Panel soffit tidak sesuai di bawah bumbung polikarbonat lutsinar atau kaca kerana haba boleh menyebabkannya meleding.",
+    n3:"Panel PVC dan soffit tidak sesuai di bawah bumbung polikarbonat lutsinar atau kaca kerana haba menyebabkannya meleding.",
     area_title:"Kawasan servis",
     area_text:"Pejabat kami di Bukit Mertajam sedang diubah suai dan akan dibuka tahun depan. Buat masa ini, tempah lawatan tapak melalui WhatsApp.",
     agent_title:"Kami mencari ejen jualan", agent_text:"Dapatkan komisen bagi setiap kerja yang anda rujuk, dikira ikut keluasan yang dipasang. WhatsApp kami untuk maklumat lanjut.", agent_cta:"Tentang pelan ejen",
@@ -693,7 +701,15 @@ const SW = {
   "wpc-hh":{zh:"HH 灰色",en:"HH Grey",ms:"HH Kelabu"},
   "wpc-hm":{zh:"HM 砖红",en:"HM Brick red",ms:"HM Merah bata"},
   "wpc-kf":{zh:"KF 灰褐",en:"KF Taupe",ms:"KF Kelabu perang"},
-  "wpc-ym":{zh:"YM 浅褐",en:"YM Light brown",ms:"YM Perang muda"}
+  "wpc-ym":{zh:"YM 浅褐",en:"YM Light brown",ms:"YM Perang muda"},
+  "fp-001":{zh:"001 米白",en:"001 Cream",ms:"001 Krim"},
+  "fp-005":{zh:"005 黑金大理石",en:"005 Black gold marble",ms:"005 Marmar hitam emas"},
+  "fp-006":{zh:"006 深褐木纹",en:"006 Dark brown wood",ms:"006 Kayu perang gelap"},
+  "fp-007":{zh:"007 灰色",en:"007 Grey",ms:"007 Kelabu"},
+  "fp-008":{zh:"008 灰白木纹",en:"008 Grey white wood",ms:"008 Kayu putih kelabu"},
+  "fp-009":{zh:"009 浅灰紫",en:"009 Light greige",ms:"009 Kelabu muda"},
+  "fp-010":{zh:"010 浅橡木",en:"010 Light oak",ms:"010 Oak cerah"},
+  "fp-165":{zh:"165 深灰",en:"165 Dark grey",ms:"165 Kelabu gelap"}
 };
 
 function renderCard(card){
@@ -740,19 +756,23 @@ function applyLang(){
 const COLORS = {
   pvc:["pvc-002","pvc-003","pvc-001","pvc-165","pvc-009"],
   soffit:["sof-golden-oak","sof-dark-oak","sof-indo-teak","sof-black-walnut","sof-black-fir","sof-white"],
-  wpc:["wpc-ym","wpc-kf","wpc-hm","wpc-hh"]
+  wpc:["wpc-ym","wpc-kf","wpc-hm","wpc-hh"],
+  fluted:["fp-010","fp-006","fp-001","fp-008","fp-005","fp-007","fp-009","fp-165"]
 };
 const INFO = {
   pvc:{ name:"pvc_name", desc:"pvc_desc", spec:"pvc_spec", xl:"incl", x:"pvc_incl" },
   soffit:{ name:"sof_name", desc:"sof_desc", spec:"sof_spec", xl:"use", x:"sof_use" },
-  wpc:{ name:"wpc_name", desc:"wpc_desc", spec:"wpc_spec", xl:"use", x:"wpc_use" }
+  wpc:{ name:"wpc_name", desc:"wpc_desc", spec:"wpc_spec", xl:"use", x:"wpc_use" },
+  fluted:{ name:"fp_name", desc:"fp_desc", spec:"fp_spec", xl:"use", x:"fp_use" }
 };
 const TEX = {
   "pvc-001":{t:"plain",c:"#EDEBE6"}, "pvc-002":{t:"wood",c:"#8A6648",r:6,k:.32}, "pvc-003":{t:"wood",c:"#9A4A2C",r:5,k:.28},
   "pvc-009":{t:"brushed",c:"#3B3B3C"}, "pvc-165":{t:"brushed",c:"#8E8E8B"},
   "sof-white":{t:"plain",c:"#F2F0EB"}, "sof-golden-oak":{t:"wood",c:"#BC9A70",r:9,k:.3}, "sof-dark-oak":{t:"wood",c:"#9C5C2C",r:6,k:.3},
   "sof-indo-teak":{t:"wood",c:"#7C3C26",r:5,k:.3}, "sof-black-walnut":{t:"wood",c:"#6E4C2E",r:7,k:.5}, "sof-black-fir":{t:"wood",c:"#33251D",r:6,k:.45},
-  "wpc-hh":{t:"brushed",c:"#575B5D"}, "wpc-hm":{t:"brushed",c:"#93605A"}, "wpc-kf":{t:"brushed",c:"#8C8078"}, "wpc-ym":{t:"brushed",c:"#AA9B87"}
+  "wpc-hh":{t:"brushed",c:"#575B5D"}, "wpc-hm":{t:"brushed",c:"#93605A"}, "wpc-kf":{t:"brushed",c:"#8C8078"}, "wpc-ym":{t:"brushed",c:"#AA9B87"},
+  "fp-001":{t:"brushed",c:"#C4B6A4"}, "fp-005":{t:"marble",c:"#262C3A"}, "fp-006":{t:"wood",c:"#6E5550",r:7,k:.28}, "fp-007":{t:"brushed",c:"#85868B"},
+  "fp-008":{t:"wood",c:"#C6C1BB",r:9,k:.16}, "fp-009":{t:"plain",c:"#9896A2"}, "fp-010":{t:"wood",c:"#DCC09A",r:8,k:.22}, "fp-165":{t:"plain",c:"#68696C"}
 };
 const PHOTO = { pvc:{ tw:300, stretch:1.5 }, soffit:{ tw:230, stretch:1 } };
 const PHOTO_OVR = { "pvc-001":{ tw:300, stretch:1 }, "pvc-002":{ tw:300, stretch:1 } };   // seamless textures supplied by the owner
@@ -783,6 +803,15 @@ function paintTex(id, w, h){
         const warp = vnoise(u, v, 3, 2, seed) * 0.6 + vnoise(u, v, 6, 4, seed + 1) * 0.3 + vnoise(u, v, 12, 8, seed + 2) * 0.1;
         const s = Math.pow(0.5 + 0.5 * Math.sin(2 * Math.PI * (spec.r * u + 2.2 * warp)), 4);
         m = 1.05 + 0.12 * (vnoise(u, v, 40, 3, seed + 4) - 0.5) - spec.k * s - 0.06 * vnoise(u, v, 160, 6, seed + 3);
+      } else if (spec.t === "marble") {
+        const vein = (a, f) => Math.pow(1 - Math.abs(Math.sin(2 * Math.PI * (f * (u * 0.7 + v * 0.45) + a))), 26);
+        const g = vein(1.6 * vnoise(u, v, 4, 6, seed) + 0.6 * vnoise(u, v, 12, 18, seed + 1), 3)
+                + 0.7 * vein(1.4 * vnoise(u, v, 5, 7, seed + 2) + 0.5 * vnoise(u, v, 14, 20, seed + 3), 5);
+        const gold = Math.min(1, g * 1.4), base = 0.9 + 0.12 * vnoise(u, v, 30, 30, seed + 4);
+        const k2 = (y * w + x) * 4;
+        d[k2] = Math.min(255, R * base * (1 - gold) + 222 * gold); d[k2 + 1] = Math.min(255, G * base * (1 - gold) + 196 * gold);
+        d[k2 + 2] = Math.min(255, B * base * (1 - gold) + 140 * gold); d[k2 + 3] = 255;
+        continue;
       } else if (spec.t === "brushed") {
         m = 0.9 + 0.12 * vnoise(u, v, 220, 5, seed) + 0.08 * vnoise(u, v, 60, 3, seed + 1) + 0.12 * (vnoise(u, v, 8, 2, seed + 2) - 0.5);
       } else {
@@ -808,6 +837,10 @@ function panelShape(prod){
   } else if (prod === "soffit") {
     poly([[0,12],[110.5,12],[110.5,5],[119.5,5],[119.5,12],[225.5,12],[225.5,5],[234.5,5],[234.5,12],[345,12],
       [345,10.8],[235.7,10.8],[235.7,3.8],[224.3,3.8],[224.3,10.8],[120.7,10.8],[120.7,3.8],[109.3,3.8],[109.3,10.8],[0,10.8]]);
+  } else if (prod === "fluted") {
+    const pts = [[0,0],[160,0],[160,23]]; let x = 160;
+    for (let k = 0; k < 4; k++) { x -= 30; pts.push([x, 23]); if (k < 3) { pts.push([x, 14]); x -= 13.33; pts.push([x, 14]); pts.push([x, 23]); } }
+    poly(pts);
   } else {
     const pts = [[0,0],[219,0],[219,26]]; let x = 219;
     for (let k = 0; k < 8; k++) { x -= 23; pts.push([x, 26]); if (k < 7) { pts.push([x, 16]); x -= 5; pts.push([x, 16]); pts.push([x, 26]); } }
@@ -884,7 +917,8 @@ function initShow(){
   const rimW = new THREE.DirectionalLight(0xE0A06A, 0.9); rimW.position.set(1600, 500, -1400); scene.add(rimW);
   const rimC = new THREE.DirectionalLight(0x9DB6FF, 0.45); rimC.position.set(-1700, -300, -1200); scene.add(rimC);
 
-  const LEN = 1050, R = 760, STEP = 0.6, VIS = LEN * 1.5 / 3;
+  const LEN = 1050, STEP = 0.6, VIS = LEN * 1.5 / 3, WIDTH = { pvc:300, soffit:345, wpc:219, fluted:160 };
+  let R = 760;
   const loader = new THREE.TextureLoader(), aniso = renderer.capabilities.getMaxAnisotropy(), texCache = {};
   const still = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   let items = [], geo = null, pos = 0, target = 0, hover = { x:0, y:0 }, running = false, visible = true;
@@ -903,10 +937,11 @@ function initShow(){
   showBuild = prod => {
     items.forEach(it => { scene.remove(it.pivot); it.face.dispose(); it.cap.dispose(); });
     if (geo) geo.dispose();
+    R = Math.max(520, WIDTH[prod] * 2.55);
     geo = new THREE.ExtrudeGeometry(panelShape(prod), { depth:LEN, bevelEnabled:false, steps:1 });
     geo.rotateX(Math.PI / 2); geo.center();
     items = COLORS[prod].map((id, i) => {
-      const face = new THREE.MeshStandardMaterial({ color:TEX[id].c, roughness:{ pvc:0.45, soffit:0.55, wpc:0.8 }[prod], metalness:0.02 });
+      const face = new THREE.MeshStandardMaterial({ color:TEX[id].c, roughness:{ pvc:0.45, soffit:0.55, wpc:0.8, fluted:0.6 }[prod], metalness:0.02 });
       const cap = new THREE.MeshStandardMaterial({ color:new THREE.Color(TEX[id].c).multiplyScalar(0.8), roughness:0.8 });
       const sat = { value:1 };
       const mono = sh => {
